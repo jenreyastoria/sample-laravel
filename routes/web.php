@@ -10,7 +10,10 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
+Route::get('/register', [AuthController::class, 'showRegistrationForm'])->name('register');
 Route::post('/login', [AuthController::class, 'login'])->name('login.post');
+
+Route::post('/register', [AuthController::class, 'register'])->name('register.post');
 
 
 Route::middleware(['auth'])->group(function () {

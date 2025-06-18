@@ -8,6 +8,7 @@
 @section('content')
 <div class="container">
     <h1>Posts</h1>
+    <h3>{{ $user->email }}</h3>
     <a href="{{ route('posts.create') }}" class="btn btn-primary">Create Post</a>
     <table class="table">
         <thead>
