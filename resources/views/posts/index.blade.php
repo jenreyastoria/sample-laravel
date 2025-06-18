@@ -1,5 +1,10 @@
 @extends('layouts.app')
 
+
+@section('nav')
+@include('layouts.nav')
+@endsection
+
 @section('content')
 <div class="container">
     <h1>Posts</h1>
